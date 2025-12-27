@@ -1,9 +1,7 @@
 package insurance.repository;
 
-import insurance.domain.Provider;
 import insurance.domain.Quote;
 import insurance.domain.enumaration.CoverageType;
-import io.undertow.server.ListenerRegistry;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
