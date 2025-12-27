@@ -1,9 +1,5 @@
 server:
   port: 8383
-  undertow:
-    threads:
-      io: ${SERVER_UNDERTOW_THREADS_IO:400}
-      worker: ${SERVER_UNDERTOW_THREADS_WORKER:4000}
 logging:
   level:
     root: ${LOG_LEVEL:info}
@@ -15,7 +11,7 @@ spring:
   liquibase:
     change-log: classpath:liquibase/master.xml
     enabled: ${LIQUIBASE_ENABLED:true}
-  jackson:
+  Jackson:
     serialization:
       indent-output: true
     default-property-inclusion: non_null
