@@ -1,0 +1,24 @@
+server:
+  port: 8383
+  undertow:
+    threads:
+      io: ${SERVER_UNDERTOW_THREADS_IO:400}
+      worker: ${SERVER_UNDERTOW_THREADS_WORKER:4000}
+logging:
+  level:
+    root: ${LOG_LEVEL:info}
+spring:
+  application:
+    name: insurance
+  profiles:
+    active: ${SPRING_ACTIVE_PROFILE:dev}
+  liquibase:
+    change-log: classpath:liquibase/master.xml
+    enabled: ${LIQUIBASE_ENABLED:true}
+  jackson:
+    serialization:
+      indent-output: true
+    default-property-inclusion: non_null
+  jpa:
+    show-sql: ${DEBUG_SQL:false}
+    open-in-view: false
