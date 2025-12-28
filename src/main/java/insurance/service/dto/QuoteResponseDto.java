@@ -1,5 +1,6 @@
 package insurance.service.dto;
 
+import insurance.service.dto.enumeration.CoverageTypeDto;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 public class QuoteResponseDto {
-    private String coverageType;
+    private CoverageTypeDto coverageType;
     private BigDecimal price;
     private String providerName;
 }

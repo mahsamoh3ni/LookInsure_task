@@ -10,6 +10,5 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @NoArgsConstructor
 public class ApplicationProperties {
-    private String auth;
     private String locale;
 }
