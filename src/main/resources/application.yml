@@ -18,3 +18,5 @@ spring:
   jpa:
     show-sql: ${DEBUG_SQL:false}
     open-in-view: false
+application:
+  locale: ${LOCALE:fa}
